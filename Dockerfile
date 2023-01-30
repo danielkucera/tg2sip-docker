@@ -5,7 +5,7 @@ RUN wget https://github.com/Infactum/tg2sip/releases/download/v1.3.0/tg2sip_bion
 RUN unzip tg2sip_bionic.zip 
 RUN chmod +x * 
 
-FROM ubuntu:latest
+FROM ubuntu:focal
 
 RUN apt update && apt install -y libopus0 libssl1.1
 
